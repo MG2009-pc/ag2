@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN PAGE</title>
+</head>
+
+<style>
+
+body {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    min-height: 100vh;
+    min-width: fit-content;
+    padding: 0 10px;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:url("win\ 12.png")  ;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.wrapper {
+    width: 490px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ffffff80;
+    backdrop-filter: blur(8px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.input-field {
+    position: relative;
+    border-bottom: 2px solid #ccc;
+    margin: 15px 0;
+}
+
+.input-field label {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+}
+
+.input-field input {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-field input:focus~label,
+.input-field input:focus~label {
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%) ;
+}
+
+.forget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0 35px 0;
+    color: #fff;
+}
+
+#remmember {
+    accent-color: #fff;
+    display: flex;
+    align-items: center;
+} 
+
+.forget label p {
+    margin-left: 8px;
+}
+
+.wrapper a {
+    color: #efefef;
+    text-decoration: underline;
+}
+
+botton {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.register {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+
+</style>
+
+
+<body>
+
+    <h1>.............</h1>
+
+<div class="wrapper">
+<form action="#">
+ <h1>MOHAMED AGAMY</h1>   
+<div class="input-field">
+    <input type="text" required>
+    <label>Enter your email</label>
+</div> 
+
+<div class="input-field">
+    <input type="password" required>
+    <label>Enter your password</label>
+</div>
+
+<div class="forget">
+    <label for="remmember"> 
+        <input type="checkbox" id="remmember">
+        <p>Remmember Me</p>
+    </label>
+    <a href="#">Forget Password?</a>
+</div>
+
+<button type="submit">Log In</button>
+<div class="register">
+    <p>Dont have an account?
+        <a href="#">Register</a>
+    </p>
+</div>
+
+   <a href="STARTUP.html"><button style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.133);border-radius: 20px;;">NEXET</button></a>
+
+</form>
+</div>    
+
+</body>
+</html>
